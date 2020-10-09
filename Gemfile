@@ -27,6 +27,9 @@ gem 'solargraph', group: :development
 # Ruby gem for bootstrap
 gem 'bootstrap', '~> 4.0'
 gem 'sassc', '2.1.0'
+gem 'sprockets-rails', '~> 2.3.2'
+gem 'jquery-rails'
+gem 'autoprefixer-rails', '8.6.5'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
