@@ -8,6 +8,10 @@ end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.3'
+# Ruby gem for devise
+gem 'devise'
+# Ruby gem for simple user forms
+gem 'simple_form', '~> 3.5'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', '~> 1.3.6'
 # Use Puma as the app server
@@ -30,6 +34,7 @@ gem 'sassc', '2.1.0'
 gem 'sprockets-rails', '~> 2.3.2'
 gem 'jquery-rails'
 gem 'autoprefixer-rails', '8.6.5'
+gem 'bootstrap-sass-extras', '~> 0.0.2'
 # Gem for font and media logos
 gem 'font-awesome-sass', '~> 4.6', '>= 4.6.2'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
