@@ -8,9 +8,9 @@
                 required: true,
                 autofocus: true %>
     <%= f.input :firstname,
-                input_html: { autocomplete: "given-name" }%>
+                input_html: { autocomplete: "given-name" } %>
     <%= f.input :lastname,
-                input_html: { autocomplete: "family-name" }%>
+                input_html: { autocomplete: "family-name" } %>
     <%= f.input :email, required: true %>
 
     <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
