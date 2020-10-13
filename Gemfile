@@ -27,7 +27,7 @@ gem 'coffee-script-source', '1.8.0'
 # Ruby gem for solargraph
 gem 'solargraph', group: :development
 # Ruby gem for bootstrap
-gem 'bootstrap', '~> 4.0'
+gem 'bootstrap'
 gem 'sassc', '2.1.0'
 gem 'sprockets-rails', '~> 2.3.2'
 gem 'jquery-rails'

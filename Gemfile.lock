@@ -270,7 +270,7 @@ PLATFORMS
 
 DEPENDENCIES
   autoprefixer-rails (= 8.6.5)
-  bootstrap (~> 4.0)
+  bootstrap
   bootstrap-sass-extras (~> 0.0.2)
   byebug
   capybara (~> 2.13)
