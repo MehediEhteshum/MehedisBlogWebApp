@@ -123,7 +123,8 @@
     <div class="well">
       <h4>Recent Posts</h4>
       <% @articles.each do |article| %>
-      <strong><%= link_to article.title, article %></strong>
+      <strong><%= link_to article.title, article %></strong><br/>
+      <i>Created by: <%= article.user.username %></i>
       <p><%= truncate(article.body) %></p>
       <% end %>
     </div>
