@@ -4,6 +4,6 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
-  # Association of user and articles.
-  has_many :articles
+  # Association of user to articles, comments.
+  has_many :articles, :comments
 end

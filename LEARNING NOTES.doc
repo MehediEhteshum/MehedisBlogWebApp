@@ -1,0 +1,38 @@
+Important files and folders:
+
+Gemfile
+./public/favicon.ico
+
+# rails g migration item_name column_name1:dtype column_name2:dtype
+./db/migrate/
+
+# rake db:migrate
+./db/schema.rb
+
+./config/environments/development.rb, production.rb
+./config/initializers/devise.rb, new_iem.rb
+./config/routes.rb, application.rb
+
+# Model view controller (MVC)
+./app/assets/javascripts/application.js
+./app/assets/stylesheets/
+./app/controllers/items_controller.rb
+./app/mailers/contact_mailer.rb (manual)
+# rails g model item_name column_name1:dtype column_name2:dtype
+./app/models/item.rb
+./app/views/item_folder/
+./app/views/devise/registrations/
+./app/views/devise/sessions/
+./app/views/layouts/_partial.html.erb, other.html.erb
+./app/views/pages/_mailer.html.erb (manual), otherpages.html.erb
+
+Rails Generators Syntax
+Controller, Plural, rails g controller Users index show
+Helper, Plural, rails g helper Users
+Mailer, Singular, rails g mailer UserMailer
+Migration, Plural, rails g migration AddEmailToUsers email:string
+Model, Singular, rails g model User name:string
+Observer, Singular, rails g observer User
+Resource, Plural*, resources :users, :only => [:index, :show]
+Scaffold, Singular, rails g scaffold User name:string
+Table, Plural, SELECT * FROM users;
