@@ -1,4 +1,6 @@
-<h1>Articles</h1>
+<%
+=begin%>
+ <h1>Articles</h1>
 
 <table class="table table-striped">
   <thead>
@@ -22,7 +24,11 @@
     </tr>
     <% end %>
   </tbody>
-</table>
+</table> 
+<%
+=end%>
+
+<%= render 'comments/comment' %>
 
 <br>
 

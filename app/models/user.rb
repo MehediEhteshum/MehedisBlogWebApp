@@ -5,5 +5,6 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   # Association of user to articles, comments.
-  has_many :articles, :comments
+  has_many :articles
+  has_many :comments
 end
