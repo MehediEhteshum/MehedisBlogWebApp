@@ -14,6 +14,8 @@
 <% if current_user.present? && (current_user == comment.user) %>
 <%= link_to 'Edit', edit_article_comment_path(comment.article, comment) %> |
 <%= link_to 'Delete', [comment.article, comment], method: :delete, data: { confirm: "Are you sure?" } %>
+<% elsif current_user.present? && (current_user == @article.user) %>
+<%= link_to 'Delete', [comment.article, comment], method: :delete, data: { confirm: "Are you sure?" } %>
 <% end %>
 <hr>
 <!--'Else' do nothing; (Note: there is a default 'nil' comment.
