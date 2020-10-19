@@ -38,7 +38,7 @@
           <%= current_user.username %>
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="position:absolute; right:0px; left:auto;">
-          <%= link_to "My Articles", articles_path, class:"dropdown-item" %>
+          <%= link_to "My Articles", articles_myarticles_path, class:"dropdown-item" %>
           <%= link_to "Create a New Article", new_article_path, class:"dropdown-item" %>
           <%= link_to "Edit My Profile", edit_user_registration_path, class:"dropdown-item" %>
           <div class="dropdown-divider"></div>

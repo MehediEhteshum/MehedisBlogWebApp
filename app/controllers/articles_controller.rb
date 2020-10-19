@@ -9,6 +9,11 @@ class ArticlesController < ApplicationController
     @articles_recent = Article.last(3)
   end
 
+  def myarticles
+    @articles = Article.where(["user_id = :id", {id: current_user.id}]).paginate(page: params[:page], per_page: 3)
+    @articles_recent = Article.last(3)
+  end
+
   # GET /articles/1
   # GET /articles/1.json
   def show

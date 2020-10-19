@@ -1,0 +1,36 @@
+<div class="row">
+  <!-- Blog article Content Column -->
+  <div class="col-lg-8">
+    <% @articles.each do |article| %>
+    <!-- Blog article -->
+    <!-- Title -->
+    <h4 style="font-size:5vh;"><%= link_to article.title, article %></h4>
+    <!-- Date/Time -->
+    <p><span class="glyphicon glyphicon-time"></span>
+    </p>
+
+    <!-- Author -->
+    <p>
+      Article By:<strong> <%= article.user.username %></strong>
+    </p>
+    <hr>
+    <% end %>
+    <br>
+    <%= will_paginate @articles %>
+    <br><br>
+    <%= link_to "Create a new article", new_article_path %>
+  </div>
+
+  <!-- Blog Sidebar Widgets Column -->
+  <div class="col-md-4">
+    <div class="well">
+      <h4>Recent Posts</h4>
+      <% @articles_recent.each do |article| %>
+      <strong><%= link_to article.title, article %></strong><br />
+      <i>Created by: <%= article.user.username %></i>
+      <p><%= truncate(article.body) %></p>
+      <% end %>
+    </div>
+  </div>
+</div>
+<br>

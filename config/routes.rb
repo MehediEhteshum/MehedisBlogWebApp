@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
   devise_for :users, :controllers => {registrations: "registrations"}
+
+  get "articles/myarticles"
   resources :articles do
     resources :comments
   end
+
   resources :contacts
 
   root to: "pages#index"
