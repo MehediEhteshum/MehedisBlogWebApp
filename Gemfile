@@ -6,11 +6,11 @@ git_source(:github) do |repo_name|
 end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem "rails", "~> 5.1.3"
+gem "rails", ">= 5.2"
 # Ruby gem for devise
 gem "devise"
 # Ruby gem for simple user forms
-gem "simple_form", "~> 3.5"
+gem "simple_form", "~> 4"
 # Use Puma as the app server
 gem "puma", "~> 3.7"
 # Use SCSS for stylesheets
@@ -38,6 +38,7 @@ gem "will_paginate-bootstrap", "~> 1.0", ">= 1.0.2"
 # Ruby gem for email validation
 gem "valid_email2"
 gem "validates_email_format_of"
+gem "sendgrid-ruby"
 # Gem for font and media logos
 gem "font-awesome-sass", "~> 4.6", ">= 4.6.2"
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
