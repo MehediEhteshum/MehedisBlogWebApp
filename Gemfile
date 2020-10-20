@@ -35,6 +35,9 @@ gem "bootstrap-sass-extras", "~> 0.0.2"
 # Ruby gem for pagination
 gem "will_paginate", "~> 3.1", ">= 3.1.6"
 gem "will_paginate-bootstrap", "~> 1.0", ">= 1.0.2"
+# Ruby gem for email validation
+gem "valid_email2"
+gem "validates_email_format_of"
 # Gem for font and media logos
 gem "font-awesome-sass", "~> 4.6", ">= 4.6.2"
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
