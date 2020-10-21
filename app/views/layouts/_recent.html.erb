@@ -1,0 +1,12 @@
+<div class="col-md-4">
+  <br>
+  <!-- Side Widget Well -->
+  <div class="well">
+    <h4>Recent Posts</h4>
+    <% @articles_recent.each do |article| %>
+    <strong><%= link_to article.title, article %></strong><br />
+    <i>Created by: <%= article.user.username %></i>
+    <p><%= truncate(article.body) %></p>
+    <% end %>
+  </div>
+</div>

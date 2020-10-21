@@ -14,6 +14,12 @@ class ArticlesController < ApplicationController
     @articles_recent = Article.last(3)
   end
 
+  def search
+    @user_ids = User.where("username LIKE ?", "%" + params[:q] + "%").ids
+    @articles = Article.where("title LIKE ? or body LIKE ? or user_id IN (?)", "%" + params[:q] + "%", "%" + params[:q] + "%", @user_ids).paginate(page: params[:page], per_page: 3)
+    @articles_recent = Article.last(3)
+  end
+
   # GET /articles/1
   # GET /articles/1.json
   def show
