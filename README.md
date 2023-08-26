@@ -1,4 +1,4 @@
-# README
+# Blog site using Ruby on Rails (README TO BE UPDATED) 
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
